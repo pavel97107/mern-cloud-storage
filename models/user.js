@@ -1,4 +1,4 @@
-const { Schema, ObjectId, model } = require("mogoose");
+const { Schema, model, Types } = require("mongoose");
 
 const User = Schema({
   email: {
@@ -21,7 +21,7 @@ const User = Schema({
   avatar: {
     type: String,
   },
-  files: [{ type: ObjectId, ref: "File" }],
+  files: [{ type: Types.ObjectId, ref: "File" }],
 });
 
 module.exports = model("User", User);

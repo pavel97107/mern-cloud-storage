@@ -1,9 +1,12 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-
 const app = express();
 const PORT = process.env.PORT || 8000;
+const authRouter = require("./routes/auth");
+
+app.use(express.json());
+app.use("/api/auth", authRouter);
 
 const start = async () => {
   try {
