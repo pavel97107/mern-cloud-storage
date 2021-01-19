@@ -1,0 +1,14 @@
+.login {
+    width: 100%;
+    height: 100vh;
+}
+
+.login .container {
+    height: 100%;
+}
+.login__body {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

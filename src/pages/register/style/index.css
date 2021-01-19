@@ -1,0 +1,14 @@
+.registration {
+    width: 100%;
+    height: 100vh;
+}
+
+.registration .container {
+    height: 100%;
+}
+.registration__body {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
