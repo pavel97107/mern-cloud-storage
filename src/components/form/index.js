@@ -1,9 +1,9 @@
 import React from "react";
 import './style/index.css'
-export default ({ children }) => {
+export default ({ children, onSubmit }) => {
   return (
     <div className="form">
-      <form>{children}</form>
+      <form onSubmit={onSubmit}>{children}</form>
     </div>
   );
 };

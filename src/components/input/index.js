@@ -1,7 +1,7 @@
 import React from "react";
 import "./style/index.css";
 
-export default ({ type,name, value,placeholder, onChange }) => {
+export default ({ type,name, value, placeholder, onChange }) => {
   return (
     <input
       type={type}

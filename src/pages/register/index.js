@@ -4,10 +4,10 @@ import "./style/index.css";
 
 export default () => {
   const [userData, setUserData] = useState({
-    emai: "",
+    email: "",
     password: "",
   });
-  function hadnlerChange(e) {
+  function handlerChange(e) {
     setUserData({ ...userData, [e.target.name]: e.target.value });
   }
 
@@ -23,7 +23,7 @@ export default () => {
                 value={userData.email}
                 name="email"
                 placeholder="Введите Email"
-                onChange={(e) => hadnlerChange(e)}
+                onChange={(e) => handlerChange(e)}
               />
             </div>
             <div className="form__group">
@@ -32,7 +32,7 @@ export default () => {
                 value={userData.password}
                 name="password"
                 placeholder="Введите Пароль"
-                onChange={(e) => hadnlerChange(e)}
+                onChange={(e) => handlerChange(e)}
               />
             </div>
             <button>Отправить</button>
